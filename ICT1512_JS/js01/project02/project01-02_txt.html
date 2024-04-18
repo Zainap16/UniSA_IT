@@ -15,6 +15,7 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-2</title>
    <link rel="stylesheet" href="styles.css" />
+   <script src="project01-02_txt.js" ></script>
 </head>
 
 <body>
@@ -36,34 +37,55 @@
          </thead>
          <tbody>
             <tr>
-               <td>
+               <td id="td1">
+                     <script>
+                        let ser1Name = service1Name;
 
+                        document.getElementById("td1").textContent = ser1Name;
+                     </script>
                </td>
-               <td>
+               <td id="td1_1">
+                  <script>
+                     let spd1 = service1Speed;
 
-               </td>
-            </tr>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
-               </td>
-            </tr>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
+                     document.getElementById("td1_1").textContent = spd1;
+                  </script>
                </td>
             </tr>
             <tr>
-               <td>
+               <td id="td2">
+                  <script>
+                     //access the varibale from JS file
+                     let ser2Name = service2Name;
 
+                     //update content on the <td> element
+                     document.getElementById("td2").textContent = ser2Name;
+                  </script>
                </td>
-               <td>
+               <td id="td2_1">
+                  <script>
+                     let spd2 = service2Speed;
+
+                     document.getElementById("td2_1").textContent = spd2;
+                  </script>
+               </td>
+            </tr>
+            <tr>
+               <td id="td3">
+                     <script>
+                        let ser3Name = service3Name;
+
+                        document.getElementById("td3").textContent = ser3Name;
+                     </script>
+               </td>
+               <td id="td3_1" >
+                  <script>
+                     let spd3 = service3Speed;
+
+                     document.getElementById("td3_1").textContent = spd3;
+                  </script>
+               </td>
+            </tr>
 
                </td>
             </tr>

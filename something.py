@@ -14,5 +14,5 @@ weights_kg = [110, 70, 120, 80, 55, 90, 105, 115, 75, 85, 100, 125, 130, 65, 60,
 # s- size,alpha-trasnparent
 # plt.scatter(years)
 # plt.show()
-plt.plot(years, weights_kg, c="#00f")
+plt.plot(years, weights_kg, c="black")
 plt.show()

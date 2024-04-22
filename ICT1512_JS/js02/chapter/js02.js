@@ -71,6 +71,9 @@ function getEstimate(){
       document.getElementById("estimate").innerHTML = "$" + totalCost;
 }
 
+// document.getElementById("“memberNumber”").value = memNUm;
+// var isChecked document.getElementById("primeMember").checked 
+// document.addEventListener("load", updateRegistration);
 
 
 

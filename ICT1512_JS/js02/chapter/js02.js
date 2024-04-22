@@ -32,6 +32,16 @@ function setupForm(){
       document.getElementById("photoRights").checked = false;
       document.getElementById("photoDist").value = 0;
 
+      getEstimate();
+
+      // Add event handlers for each input control
+      document.getElementById("photoNum").onchange = getEstimate;
+      document.getElementById("photoHrs").onchange = getEstimate;
+      document.getElementById("photoDist").onchange = getEstimate;
+      document.getElementById("photoBook").onchange = getEstimate;
+      document.getElementById("photoRights").onchange = getEstimate;
+
+
 }
 
 // estimate the total cost of the service
@@ -56,7 +66,13 @@ function getEstimate(){
       totalCost += buyBook ? BOOK_COST : 0;
       // Add the cost of photo rights if purchased
       totalCost += buyRights ? REPRO_COST : 0;
+
+      // Display the total cost estimate
+      document.getElementById("estimate").innerHTML = "$" + totalCost;
 }
+
+
+
 
 
 

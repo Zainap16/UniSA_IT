@@ -9,8 +9,11 @@
 
       Filename: js02.js
  */
+// setup the form when the page loads
+window.addEventListener("load", setupForm);
 
-//set thr form's default values
+
+//set the form's default values
 
 function setupForm(){
 

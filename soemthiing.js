@@ -5,3 +5,6 @@ function writeMsg(date, status) {
    let socialSecurityNumber = "123-45-6789";
    let checkVar = isNaN(socialSecurityNumber);
    document.write(checkVar);
+
+   
+   document.write("<p>This is a test</p>")

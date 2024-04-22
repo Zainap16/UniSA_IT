@@ -34,7 +34,16 @@ function setupForm(){
 
 }
 
+// estimate the total cost of the service
 
+function getEstimate(){
+
+      let totalCost = 0;
+      let photographers = document.getElementById("photoNum").value; // gets the value
+      let hours = document.getElementById("photoHrs").value;
+      let distance = document.getElementById("photoDist").value;
+
+}
 
 
 

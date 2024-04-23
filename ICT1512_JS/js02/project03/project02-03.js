@@ -11,7 +11,7 @@
 
 
 
- const square = document.getElementById("sqaure");
+ const square = document.getElementById("square");
  const triangle = document.getElementById("triangle");
  const circle = document.getElementById("circle");
 

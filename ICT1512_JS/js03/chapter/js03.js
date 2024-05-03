@@ -10,3 +10,14 @@
      Filename: js03.js
  */
 
+//days of the weeek
+
+let weekDays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];

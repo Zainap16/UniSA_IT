@@ -4,8 +4,8 @@
 
       Tipton Turbines
       Baseball Schedule Data
-      Author: 
-      Date:   
+      Author: Zainap Van Blerck
+      Date:   2024/05/03
 
       Filename: schedule.js
 */

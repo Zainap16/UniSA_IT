@@ -17,7 +17,7 @@ function verifyForm(){
       let fEmail = document.getElementById("email").value;
       let fPhone = document.getElementById("phone").value;
 
-      let message =(fName !== "" && fEmail !== "" && fPhone !== "") ? "Thank you" : "Please fill in all fields";
+      let message =(fName !== "" && fEmail !== "" && fPhone !== "") ? "Thank you" : "Please fill in all fields"; // ternary operator
 
       alert(message);
 

@@ -17,3 +17,23 @@
  function formatCurrency(value) {
     return "$" + value.toFixed(2);
  }
+
+ function calcTotal(){
+   cost = 0;
+   //declare the checkbox barianles
+
+   let buyChicken = document.getElementById("chicken").checked;
+   let buyHalibut = document.getElementById("halibut").checked;
+   let buyBurger = document.getElementById("burger").checked;
+   let buySalmon = document.getElementById("salmon").checked;
+   let buySalad = document.getElementById("salad").checked;
+
+
+   if (buyChicken == True){
+      cost += BURGER_PRICE;
+   }else if (){
+
+   }
+
+
+ }

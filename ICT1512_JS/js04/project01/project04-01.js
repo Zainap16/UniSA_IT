@@ -3,12 +3,12 @@
       Project 04-01
 
       Application to calculate total moving cost
-      Author: 
-      Date:   
+      Author: Zainap Van Blerck
+      Date:   2024/05/31
 
       Filename: project04-01.js
 */
-
+"use strict";
 // Global Constants
 const COST_PER_LB = 50;
 const COST_PER_MILE = 75;

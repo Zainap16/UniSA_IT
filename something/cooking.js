@@ -1,0 +1,1 @@
+response = window.confirm(message)

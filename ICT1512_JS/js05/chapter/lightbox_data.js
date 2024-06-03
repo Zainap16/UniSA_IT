@@ -33,3 +33,6 @@ imgCaptions[11]="Longs Peak Trail (Rocky Mountain National Park)";
 
 // Count of images in the slideshow
 let imgCount = imgFiles.length;
+
+
+

@@ -129,10 +129,17 @@ function createLightbox() {
    let lightBox = document.getElementById("lightbox");
    // Parts of the lightbox
    let lbTitle = document.createElement("h1");
+   lbTitle.textContent = lightboxTitle;
    let lbCounter = document.createElement("div");
+   let currentImg = 1;
+lbCounter.textContent = currentImg + " / " + imgCount;
    let lbPrev = document.createElement("div");
+   lbPrev.innerHTML = "&#9664;";
    let lbNext = document.createElement("div");
+   lbNext.innerHTML = "&#9654;";
    let lbPlay = document.createElement("div");
+   lbPlay.innerHTML = "&#9199;";
+
    let lbImages = document.createElement("div");
 
    // Design the lightbox title

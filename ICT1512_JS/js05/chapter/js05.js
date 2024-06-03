@@ -9,7 +9,7 @@
       Filename: js05.js
 */
 
-window.addEventListener("load", setupGallery);
+// window.addEventListener("load", setupGallery);
 window.addEventListener("load", createLightbox);
 
 function setupGallery() {
@@ -132,19 +132,19 @@ function createLightbox() {
    lbTitle.textContent = lightboxTitle;
    let lbCounter = document.createElement("div");
    let currentImg = 1;
-lbCounter.textContent = currentImg + " / " + imgCount;
+   lbCounter.textContent = currentImg + " / " + imgCount;
    let lbPrev = document.createElement("div");
-
-   lbPrev.onclick = showPrev; 
+   lbPrev.innerHTML = "&#9664;";
 
 
    let lbNext = document.createElement("div");
    lbNext.innerHTML = "&#9654;";
+   
+    
    let lbPlay = document.createElement("div");
    lbPlay.innerHTML = "&#9199;";
 
-   let lbImages = document.createElement("div");
-
+  
    // Design the lightbox title
    lightBox.appendChild(lbTitle);
    lbTitle.id = "lbTitle";
@@ -157,22 +157,12 @@ lbCounter.textContent = currentImg + " / " + imgCount;
    // Design the lightbox next slide button
    lightBox.appendChild(lbNext);
    lbNext.id = "lbNext";
+   lbNext.onclick = showNext;
    // Design the lightbox Play-Pause button
    lightBox.appendChild(lbPlay);
    lbPlay.id = "lbPlay";
    lbPrev.innerHTML = "&#9664;";
-   let timeID; 
-   lbPlay.onclick = function() {
-      if (timeID) {
-         // Stop the slideshow
-         window.clearInterval(timeID);
-         timeID = undefined;
-        } else {
-         // Start the slideshow
-         showNext();
-         timeID = window.setInterval(showNext, 1500);
-        }
-     }
+  
    // Design the lightbox images container
    lightBox.appendChild(lbImages);
    lbImages.id = "lbImages";
@@ -183,15 +173,24 @@ for (let i = 0; i < imgCount; i++) {
    image.src = imgFiles[i];
    image.alt = imgCaptions[i];
    lbImages.appendChild(image);
-  } 
+  }
+  
+  // function to move forward through the image list
+  function showNext(){
+   lbImages.appendChild(lbImages.firstElementChild);
+   (currentImg< imgCount) ? currentImg++ : currentImg = 1;
+   lbCounter.textContent = currentImg + " / " +imgCount;
   }
 
-  // Function to move backward through the image list
+     // Function to move backward through the image list
 function showPrev() {
    lbImages.insertBefore(lbImages.lastElementChild,
   lbImages.firstElementChild);
    (currentImg > 1) ? currentImg-- : currentImg = imgCount;
    lbCounter.textContent = currentImg + " / " + imgCount;
   } 
+  }
+
+
   
  

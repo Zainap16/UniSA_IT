@@ -134,7 +134,10 @@ function createLightbox() {
    let currentImg = 1;
 lbCounter.textContent = currentImg + " / " + imgCount;
    let lbPrev = document.createElement("div");
-   lbPrev.innerHTML = "&#9664;";
+
+   lbPrev.onclick = showPrev; 
+
+
    let lbNext = document.createElement("div");
    lbNext.innerHTML = "&#9654;";
    let lbPlay = document.createElement("div");
@@ -157,6 +160,19 @@ lbCounter.textContent = currentImg + " / " + imgCount;
    // Design the lightbox Play-Pause button
    lightBox.appendChild(lbPlay);
    lbPlay.id = "lbPlay";
+   lbPrev.innerHTML = "&#9664;";
+   let timeID; 
+   lbPlay.onclick = function() {
+      if (timeID) {
+         // Stop the slideshow
+         window.clearInterval(timeID);
+         timeID = undefined;
+        } else {
+         // Start the slideshow
+         showNext();
+         timeID = window.setInterval(showNext, 1500);
+        }
+     }
    // Design the lightbox images container
    lightBox.appendChild(lbImages);
    lbImages.id = "lbImages";
@@ -169,3 +185,13 @@ for (let i = 0; i < imgCount; i++) {
    lbImages.appendChild(image);
   } 
   }
+
+  // Function to move backward through the image list
+function showPrev() {
+   lbImages.insertBefore(lbImages.lastElementChild,
+  lbImages.firstElementChild);
+   (currentImg > 1) ? currentImg-- : currentImg = imgCount;
+   lbCounter.textContent = currentImg + " / " + imgCount;
+  } 
+  
+ 

@@ -3,8 +3,8 @@
       Project 03-03
 
       Application to generate a movie list
-      Author: 
-      Date:   
+      Author: Zainap Van Blerck
+      Date:   2024/06/10
 
       Filename: project03-03.js
 */

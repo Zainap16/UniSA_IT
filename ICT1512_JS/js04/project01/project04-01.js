@@ -30,10 +30,15 @@ function calcTotal() {
    let totalCost = 0;      // Set the initial estimate to $0
    msgBox.innerHTML = "";  // Erase any warnings in the message box
    
+// if (!(wgtBox.value > 0) ) {
+//    throw new Error("!! Enter a positive weight")
+   
+// } else{
+//    totalCost += wgtBox.value * COST_PER_LB;.
+// }
+      // totalCost += wgtBox.value * COST_PER_LB;      
 
-      totalCost += wgtBox.value * COST_PER_LB;      
-
-
+     
       totalCost += distBox.value * COST_PER_MILE;   
   
    

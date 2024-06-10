@@ -3,8 +3,8 @@
       Project 03-04
 
       Application to write a list of customer reviews
-      Author: 
-      Date:   
+      Author: Zainap Van Blerck
+      Date:   2024/06/10
 
       Filename: project03-04.js
 */
@@ -20,4 +20,22 @@ let reviews = [
    "The latest version of Dance Off improves upon the 8th Edition only slightly; still is one of the best dance-style games on the market.",
 ];
 let reviewTitles = ["My Favorite Workout Game", "Poor Choreography", "Buggy with Poor Tech Support", "Nice Improvement"];
+
+function starrImages(rating){
+      var imageText = "";
+      for(let counter = 1; counter <= rating; counter++){
+            imageText += "<img src = 'star.png' alt = 'text' "+counter  + ">";
+            return imageText;
+      } 
+}
+
+
+
+
+
+
+
+
+
+
 

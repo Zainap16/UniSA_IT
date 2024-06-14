@@ -1,0 +1,120 @@
+/* 
+	Student Name: Zainap Van Blerck
+	File Name: index.html
+	Date: 2024/06/14
+ */
+
+    /* CSS Reset */
+body,header,nav,main,footer,img,h1,h3{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*  Style rule for body and image */
+
+body{
+    background-color: #e3eaf8;
+}
+
+img  {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for header content */
+
+h1 {
+    align-items: center;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3%;
+    color: #101a2d;
+}
+
+/* Style rules for navigation area */
+
+nav{
+    background-color: #1d396d;
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav > a {
+    display: block;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    color:#e3eaf8 ;
+}
+
+/* Style rules for main content */
+
+
+main {
+    padding: 2%;
+    font-family: geneva,arial,sans-serif;
+    overflow: auto;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+h3{
+    padding-top: 2%;
+    font-size: 2em;
+
+}
+
+#image{
+    width: 45%;
+    float: left;
+    padding: 1%;
+}
+
+#group{
+    width: 45%;
+    float: right;
+}
+
+.external{
+    columns: #1d396d;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Style rules for footer content */
+
+footer{
+    text-align: center;
+    font-size: 0.85en ;
+    background-color:#1d396d ;
+    padding: 1% 0%;
+    color: #e3eaf8;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,6 +4,99 @@
  File Name: styles.css
  */
 
+ /* CSS Reset */
+ body, header, nav, main, footer, img, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    }
+
+ /* Style rule for images */
+ img {
+    max-width: 100%;
+    display: block;
+    }
+
+ /* Style rules for header content */
+ header {
+    text-align: center;
+    font-size: 3em;
+    color: #373684;
+    }
+
+header h1 {
+        font-style: italic;
+        }
+
+/* Style rules for navigation area */
+nav {
+    background-color: #373684;
+    }
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    }
+    nav li {
+    display: inline-block;
+    font-size: 2em;
+    }
+    nav li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    }
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+    }
+    main p {
+    font-size: 1.25em;
+    }
+    .action {
+    font-size: 1.75em;
+    color: #373684;
+    font-weight: bold;
+    }
+
+    #piano, #guitar, #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+        }
+        #info {
+        clear: left;
+        background-color: #c0caf7;
+        padding: 1% 2%;
+        }
+        #contact {
+        text-align: center;
+        }
+        #contact a {
+        color: #4645a8;
+        text-decoration: none;
+        font-weight: bold;
+        }
+        .map {
+            border: 5px solid #373684;
+            }
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+    }
+    footer a {
+    color: #4645a8;
+    text-decoration: none;
+    }
 
 
 
@@ -38,19 +131,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

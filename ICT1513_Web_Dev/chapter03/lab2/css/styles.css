@@ -1,0 +1,119 @@
+/* CSS Reset */
+
+body, header, nav, main, footer, img, h1, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules
+for body and images, */
+
+body{
+    background-color:#f6eee4 ;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for
+navigation area, */
+
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: geneva,arial,sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for
+main content, */
+
+main{
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p{
+    font-size: 1.25em;
+}
+
+main h3{
+    padding-top: 2%;
+}
+
+main ul {
+    list-style: square;
+}
+
+.link{
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action{
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact{
+    text-align: center;
+}
+
+/* Style rules
+for footer content, */
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color:#2a1f14 ;
+    color:#f6eee4;
+    padding: 1% 0%;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

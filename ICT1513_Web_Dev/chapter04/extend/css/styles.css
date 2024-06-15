@@ -2,6 +2,8 @@
 Author: Maria Cruz
 Date: Current Date
 File Name: styles.css
+
+too lazy to complete exercises
 */
 
 /* CSS Reset */
@@ -58,8 +60,19 @@ main a {
 }
 
 /* Orange */
+.orange-hex{
+    background-color:#f7bb4a;
+}
 
+.orange-rgb{
+    background-color:rgb(255,140,0);
+}
 
+.orange-hsl{
+    background-color: hsl(26, 93%, 78%); 
+    ;
+
+}
 /* Purple */
 
 

@@ -55,14 +55,14 @@ document.getElementById("buttonAdd").onclick = function() {
 }
 
 document.getElementById("buttonMinus").onclick = function() {
-   runcalculator("-");
+   runCalculator("-");
 }
 
 document.getElementById("buttonMultiply").onclick = function() {
    runCalculator("*");
 }
 
-document.getElementById("buttonDivide").onclick = function (){
+document.getElementById("buttonDivide").onclick = function() {
    runCalculator("/");
 }
 
@@ -72,48 +72,40 @@ document.getElementById("buttonDecimal").onclick = function() {
 
 // Send an empty text string if the Enter key is clicked
 document.getElementById("buttonEnter").onclick = function() {
-   runCalculator("");
+   runCalculator("=");
 }
 
 // Clear the calculator window if the C key is clicked
-document.getElementById("buttonClear").onclick = clearCalculator("");
-
-
-
+document.getElementById("buttonClear").onclick = function() {
+   clearCalculator();
+}
 
 // Function to enter characters into the calculator window based on what is clicked
-
 function runCalculator(character) {
    // Retrieve the characters in the calculator window
    let calcValue = document.getElementById("calcWindow").value;
-   
-   // Add the character to the calculator string or if its empty (the enter key) evaluate the equation
-    calcValue += (character !== ) ? character : calcValue += " = " + evalEq(calcValue) + "\n";
-   
+
+   // Add the character to the calculator string or if it's the enter key, evaluate the equation
+   if (character !== "=") {
+       calcValue += character;
+   } else {
+       calcValue += " = " + evalEq(calcValue) + "\n";
+   }
+
    // Update the characters displayed in the calculator window.
    document.getElementById("calcWindow").value = calcValue;
 }
 
-
-
-
 // Function to clear the calculator window
-
 function clearCalculator() {
-      document.getElementById("calcWindow").value ="";
+   document.getElementById("calcWindow").value = "";
 }
 
-
-
-
-
-
-/* ===================================================================== */
-
-// Function to evaluate a text string containing an equation, returning a numeric value to a specified number of decimals
-function evalEq(textStr) {
-   var lines = textStr.split(/\r?\n/);
-   var lastLine = lines[lines.length-1];
-   var eqValue = eval(lastLine);
-   return eqValue.toFixed(6);
-}  
+// Function to evaluate the equation in the calculator window
+function evalEq(eq) {
+   try {
+       return eval(eq);
+   } catch (e) {
+       return "Error";
+   }
+}

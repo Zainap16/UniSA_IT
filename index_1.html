@@ -8,11 +8,18 @@
     <script src="soemthiing.js" async></script>
 </head>
 <body>
-    <h1>Testing center</h1>
-<!-- event handlers and using functions -->
-    <input type="button" id="total" value="Calculate" onclick="writeMsg('2024/04/19','completed')">
-
-    <input type="button" value="Submit" id="SubmitButton" onclick="Submit" />
+    <!-- <input type="text" id="myInput" />
+    <script>
+    document.getElementById('myInput').addEventListener('change', function() {
+        //alert('The value has changed!');
+        console.log('Current value:', this.value);
+    });
+    </script> -->
+    <form id="myForm">
+        <input type="hidden" name="userId" value="12345" />
+        <input type="text" name="username" />
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
 </html>

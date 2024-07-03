@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name
+	File Name: 
+	Current Date: 
+ -->
+<html lang="en">
+<head>
+	<title>Style Sheets</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<header>
+		<h1>User Agent Style Sheets</h1>
+	</header>
+	
+	<nav>
+		<ul>
+            <li><a href="#">Home</a></li> 
+		    <li><a href="#">Chrome</a></li>
+            <li><a href="#">Firefox</a></li>
+        </ul>
+	</nav>
+	
+	<!-- Use the main element to add main content to the webpage -->
+	<main>
+        
+        <div id="info">
+            
+            <p>Every modern browser uses a default style sheet to display webpages. No browser uses the exact same style sheet, so style rules vary by browser. These style sheets are known as user agent style sheets. Select from the following options to view user agent style sheets.</p>
+            
+            <p><a href="https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css" target="_blank">Chrome</a></p>
+            
+            <p><a href="https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css" target="_blank">Firefox</a></p>
+            
+            <p><a href="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css" target="_blank">Safari</a></p>
+            
+            <img src="images/devtools.jpg" alt="Google Chrome DevTools">
+            
+        </div>
+        
+        <div id="examples">
+        
+            <h2>Style rules from Chrome</h2>
+            <p>
+            body {
+                display: block;
+                margin: 8px
+            }
+            </p> 
+            
+            <p>
+            body:-webkit-full-page-media {
+                background-color: rgb(0, 0, 0)
+            }</p>
+                
+            <p>p {
+                display: block;
+                -webkit-margin-before: 1__qem;
+                -webkit-margin-after: 1__qem;
+                -webkit-margin-start: 0;
+                -webkit-margin-end: 0;
+            }</p>
+                
+            <p>div {
+                display: block
+            }</p>
+                
+            <p>layer {
+                display: block
+            }</p>
+                
+            <p>article, aside, footer, header, hgroup, main, nav, section {
+                display: block
+            }</p>
+            
+                <p>marquee {
+                display: inline-block;
+            }</p>
+            
+        </div>
+	
+	</main>
+	
+	<footer>
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+	</footer>
+	
+</body>
+</html>

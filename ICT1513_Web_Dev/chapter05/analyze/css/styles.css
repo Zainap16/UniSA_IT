@@ -1,0 +1,73 @@
+/*
+    Student Name
+	File Name: 
+	Current Date: 
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background-color: #375f1b;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for header content */
+header h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    padding: 5%;
+    font-size: 3em;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #ebf7e3;
+    border-bottom: 1px solid #375f1b;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    font-size: 1em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    padding: 3%;
+}
+
+nav li a {
+    display: block;
+    color: #1b3409;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #ebf7e3;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #fff;
+    padding: 1% 0;
+}

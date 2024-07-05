@@ -18,8 +18,18 @@ img{
     display: block;
 }
 
+/* : Style rules for mobile viewport */
+
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile{
+
+    display: block;
+    
+
+}
 /* Style rules for
-navigation area, */
+navigation area */
 
 nav {
     background-color: #2a1f14;
@@ -34,7 +44,7 @@ nav ul {
 nav li {
     display: inline-block;
     font-size: 1.5em;
-    font-family: geneva,arial,sans-serif;
+    font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -89,7 +99,7 @@ footer {
     text-align: center;
     font-size: 0.85em;
     background-color:#2a1f14 ;
-    color:#f6eee4;
+    color:#f3e6d8 ;
     padding: 1% 0%;
     text-decoration: none;
 }

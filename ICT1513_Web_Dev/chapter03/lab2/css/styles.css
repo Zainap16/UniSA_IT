@@ -23,7 +23,6 @@ img{
 
 /* Style rules to show mobile class and hide tab-desk class */
 .mobile{
-
     display: block;
 }
 
@@ -121,8 +120,7 @@ main ul{
     text-decoration: none;
     font-weight: bold;
 }
-/* Style rules for
-main content, */
+/* Style rules for main content, */
 
 main{
     padding: 2%;
@@ -159,15 +157,18 @@ main ul {
     text-align: center;
 }
 
-/* Style rules
-for footer content, */
+/* Style rules for footer content, */
 
 footer {
     text-align: center;
     font-size: 0.85em;
     background-color:#2a1f14 ;
-    color:#f3e6d8 ;
+    color:#f6eee4 ;
     padding: 1% 0%;
+}
+
+footer a{
+    color: #f3e6d8 ;
     text-decoration: none;
 }
 
@@ -181,12 +182,12 @@ footer {
 
 /* Media Query for Tablet Viewport */
 
-@media screen and (min-width:620px), (type:print) {
+@media screen and (min-width:620px), print {
     /*Tablet Viewport: Show tab-desk class, hide mobile class*/
     .tab-desk{
         display: block;
     }
-    
+
     .mobile{
         display: none;
     }
@@ -202,6 +203,53 @@ footer {
     }
 }
 
+/* Media Query for Desktop Viewport. */
+
+@media screen and (min-width: 1000px), print{
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+}
+
+    nav li a{
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #2a1f14;
+        background-color: #f6eee4;
+    }
+}
+
+/* Desktop Viewport: Style rules for main content */
+
+#info ul {
+    margin-left: 5%;
+}
+
+/* Media Query for Large Desktop Viewports. */
+@media screen and (min-width: 1921px){
+    body{
+        background: linear-gradient(#f6eee4, #78593a);
+    }
+    #wrapper{
+        width: 1920px;
+        margin: 0 auto;
+    }
+    main{
+        background-color: #f6eee4;
+    }
+}
+
+/* Media Query for Print */
+
+@media print{
+    body{
+        background-color: white;
+        color: black;
+    }
+
+}
 
 
 

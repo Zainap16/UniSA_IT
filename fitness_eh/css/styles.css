@@ -1,0 +1,151 @@
+/*
+Author:
+Date:
+File Name: styles.css
+*/
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+   }
+   /* Style rules for body and images */
+   body {
+   background-color: #000;
+   }
+   img {
+    max-width: 100%;
+    display: block;
+   }
+   /* Style rules for mobile viewport */
+   /* Style rule for header */
+   header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 190px;
+   }
+   Add a Comment for Mobile
+   Styles
+   Create a Sticky Header
+   header img {
+    margin: 0 auto;
+   }
+   /* Style rules for navigation area */
+   nav {
+    padding: 1%;
+    margin-bottom: 1%;
+   }
+   nav ul {
+    list-style-type: none;
+    text-align: center;
+   }
+   nav li {
+    font-size: 1.5em;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
+   }
+   nav li:first-child {
+    border-top: none;
+   }
+   nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+   }
+   /* Show mobile class, hide tablet-desktop class */
+   .mobile {
+    display: block;
+   }
+   .tablet-desktop {
+    display: none;
+   }
+   /* Style rules for main content */
+   main {
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+   }
+   .tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+   }
+   .tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+   }
+   .hours {
+    margin-left: 10%;
+   }
+   Create a Style Rule for the
+   mobile Class
+   Add a Style Rule for the
+   tablet-desktop Class
+   Add Style Rules for the
+   tel-link Class
+   Add a Style Rule for the
+   hours Class
+   Modify the Style Rule for
+   the main Element
+   .action {
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+   }
+   #weights, #cardio, #training {
+    margin: 0 2%;
+   }
+   .round {
+    border-radius: 8px;
+   }
+   .external-link {
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+   }
+   #contact {
+    text-align: center;
+   }
+   #contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+   }
+   .map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+  
+   }
+   /* Style rules for footer content */
+   footer p {
+    font-size: 0,75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+   }
+   footer p a {
+    color: #fff;
+    text-decoration: none;
+   }
+   /* #exercises {
+    clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+   }
+   #exercises dt {
+    font-weight: bold;
+   }
+   #exercises dd {
+    padding: 0.5% 1% 2% 0;
+   } */

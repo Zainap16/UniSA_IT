@@ -1,0 +1,95 @@
+body{
+    background-color: #ccc;
+}   
+
+img{
+    max-width: 100%;
+display: block;
+}
+
+header{
+    float: left;
+    width: 25%;
+
+}
+nav{
+    float: right;
+    margin: 5em 3em 0 0;
+    width: 70%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+main{
+    float:left ;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+}
+
+h1{
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#weights, #cardio, #training{
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+}
+
+#exercises{
+    
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+
+}
+
+#exercises dt{
+    font-weight: bold;
+}
+
+#exercises dd{
+    padding: 0.5% 1% 2% 0;
+}
+
+
+
+
+
+
+
+
+
+

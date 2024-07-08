@@ -1,18 +1,19 @@
-body{
+body {
     background-color: #ccc;
-}   
-
-img{
-    max-width: 100%;
-display: block;
 }
 
-header{
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
     float: left;
     width: 25%;
 
 }
-nav{
+
+nav {
     float: right;
     margin: 5em 3em 0 0;
     width: 70%;
@@ -24,12 +25,12 @@ nav ul {
     text-align: right;
 }
 
-nav li{
+nav li {
     display: inline-block;
     font-size: 1.75em;
 }
 
-nav li a{
+nav li a {
     display: block;
     color: #fff;
     text-align: center;
@@ -37,14 +38,22 @@ nav li a{
     text-decoration: none;
 }
 
-main{
-    float:left ;
+main {
+    float: left;
     background-color: #fff;
     padding: 2%;
     font-size: 1.25em;
 }
 
-h1{
+#weights,
+#cardio,
+#training {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+}
+
+h1 {
     text-align: center;
 }
 
@@ -55,20 +64,22 @@ footer p {
     padding: 0 1em;
 }
 
-footer p a{
+footer p a {
     color: #fff;
     text-decoration: none;
 }
 
-
-#weights, #cardio, #training{
-    width: 29%;
-    float: left;
-    margin: 0 2%;
+footer {
+    clear: both;
 }
 
-#exercises{
-    
+#contact {
+    text-align: center;
+}
+
+
+#exercises {
+    clear: left;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     background-color: #f2f2f2;
@@ -76,20 +87,10 @@ footer p a{
 
 }
 
-#exercises dt{
+#exercises dt {
     font-weight: bold;
 }
 
-#exercises dd{
+#exercises dd {
     padding: 0.5% 1% 2% 0;
 }
-
-
-
-
-
-
-
-
-
-

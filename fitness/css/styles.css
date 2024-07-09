@@ -1,56 +1,61 @@
-body, header, nav, footer,main, h1, div, img, ul {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    }
+body,
+header,
+nav,
+footer,
+main,
+h1,
+div,
+img,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 body {
-    background-color: #000;
+  background-color: #000;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
-
-/* Stye rules for mobile viewport */
 
 
 /* Style rules for header */
 header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #000;
-    height: 190px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  height: 190px;
 }
 
-header img{
-    margin: 0 auto;
+header img {
+  margin: 0 auto;
 }
 
 nav {
-    padding: 1%;
-    margin-bottom: 1%;
+  padding: 1%;
+  margin-bottom: 1%;
 }
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 /* check nav CSS */
 nav li {
-   
-    font-size: 1.5;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-top: 1px solid #fff;
+  font-size: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-top: 1px solid #fff;
 }
 /* edits here */
 nav li a {
-    display: block;
-    color: #fff;
-    padding: 0.5em 1em;
-    text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
 }
 /* Show mobile class, hide tablet-desktop class */
 /* .mobile{
@@ -60,168 +65,227 @@ nav li a {
 .tablet-desktop{
     display: none;
 } */
-nav li:first-child{
-    border-top: none;
+nav li:first-child {
+  border-top: none;
 }
 
 main {
-   
-    background-color: #fff;
-    padding: 2%;
-    font-size: 1.25em;
-    font-family: 'Times New Roman', Times, serif;
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.25em;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.tel-link{
-    background-color: #404040;
-    padding: 2%;
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
-    border-radius: 5px;
+.tel-link {
+  background-color: #404040;
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
 }
 
-.tel-link a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: block;
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
 }
 
-.hours{
-    margin-left: 10%;
+.hours {
+  margin-left: 10%;
 }
 
 #weights,
 #cardio,
 #training {
-
-    margin: 0 2%;
+  margin: 0 2%;
 }
 
-.round{
-    border-radius: 8px;
+.round {
+  border-radius: 8px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 footer p {
-    font-size: 0.75em;
-    text-align: center;
-    color: #fff;
-    padding: 0 1em;
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 0 1em;
 }
 
 footer p a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 footer {
-    clear: both;
+  clear: both;
 }
 
 #contact {
-    text-align: center;
+  text-align: center;
 }
 
- /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px){
-
-    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
-.tablet-desktop{
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+  /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+  .tablet-desktop {
     display: block;
-}
+  }
 
-.mobile{
+  .mobile {
     display: none;
-}
+  }
 
-/* Tablet Viewport: Style rule for header */ 
-header{
+  /* Tablet Viewport: Style rule for header */
+  header {
     position: static;
     padding-bottom: 2%;
-}
+  }
 
-/* Tablet Viewport: Style rules for nav area */ 
-nav li {
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
     border-top: none;
     display: inline-block;
-    border-right:1px solid #fff ;
-}
+    border-right: 1px solid #fff;
+  }
 
-nav li:last-child{
+  nav li:last-child {
     border-right: none;
-}
+  }
 
-nav li a{
+  nav li a {
     padding: 0.1em 0.75em;
-}
+  }
 
- /* Tablet Viewport: Style rules for main content area */
+  /* Tablet Viewport: Style rules for main content area */
 
- main ul{
+  main ul {
     margin: 0 0 4% 10%;
- }
+  }
 
- #exercises {
+  #exercises {
     clear: left;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     background-color: #f2f2f2;
     padding: 1% 2%;
+  }
 
-}
-
-#exercises dt {
+  #exercises dt {
     font-weight: bold;
-}
+  }
 
-#exercises dd {
+  #exercises dd {
     padding: 0.5% 1% 2% 0;
-}
+  }
 
-.tel-num{
+  .tel-num {
     font-size: 1.5em;
-}
+  }
 
-.map{
+  .map {
     width: 600px;
     height: 450px;
+  }
 }
-
-}
-
 /* Media Query for Desktop Viewport */
 
+@media screen and (min-wdth: 769px), print {
+    /* Desktop Viewport: Style rule for header */
+    header {
+      width: 25%;
+      float: left;
+      padding-bottom: 0;
+    }
+  
+     /* Desktop Viewport: Style rules for nav area */
+  
+     nav{
+      float: right;
+      width: 70%;
+      margin: 4em 1em 0 0;
+     }
+  
+     nav ul{
+      text-align: right;
+     }
+  
+     nav li{
+      border: none;
+      nav li a{
+          padding: 0.5em 1em;
+      }
+     }
+      /* Desktop Viewport: Style Rules for main content */ 
+      main{
+          clear: left;
+      }
+  
+      main h1{
+          font-size: 1.8em;
+      }
+  
+      #weights, #cardio, #training{
+          width: 295;
+          float: left;
+          margin: 0 2%;
+      }
+      #exercise{
+          clear: left;
+      }
+  }
+  
+  /*Media Query for Large Desktop Viewports */
+  
+  @media screen and (min-wdth: 1921px), print {
+      /* Desktop Viewport: Style rule for header */
+      #container{
+          width: 1920px;
+          margin: 0 auto;
+      }
+    }
+  
+    /* Media Query for Print */
+    
+    @media print {
+      body{
+          background-color: #fff;
+          color: #000;
+      }
+      
+    }
 
-#contact .contact-email-link{
-    color: #666600;
-    text-decoration: none;
+
+
+#contact .contact-email-link {
+  color: #666600;
+  text-decoration: none;
 }
 
-#contact a{
-    color: #666600;
-    text-decoration: none;
+#contact a {
+  color: #666600;
+  text-decoration: none;
 }
 
-.action{
-    font-size: 1.35em;
-    color: #666600;
-    font-weight: bold;
+.action {
+  font-size: 1.35em;
+  color: #666600;
+  font-weight: bold;
 }
 
-.external-link{
-    color: #666600;
-    font-weight: bold;
-    text-decoration: none;
+.external-link {
+  color: #666600;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.map{
-    border: 2px solid #000;
-    width: 95%;
-    height: 50%;
+.map {
+  border: 2px solid #000;
+  width: 95%;
+  height: 50%;
 }
-

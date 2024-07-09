@@ -6,7 +6,7 @@ main,
 h1,
 div,
 img,
-ul {
+ul{
   margin: 0;
   padding: 0;
   border: 0;
@@ -46,7 +46,7 @@ nav ul {
 }
 /* check nav CSS */
 nav li {
-  font-size: 1.5;
+  font-size: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-top: 1px solid #fff;
 }
@@ -58,13 +58,13 @@ nav li a {
   text-decoration: none;
 }
 /* Show mobile class, hide tablet-desktop class */
-/* .mobile{
+.mobile{
     display: block;
 }
 
 .tablet-desktop{
     display: none;
-} */
+}
 nav li:first-child {
   border-top: none;
 }
@@ -110,21 +110,6 @@ h1 {
   text-align: center;
 }
 
-footer p {
-  font-size: 0.75em;
-  text-align: center;
-  color: #fff;
-  padding: 0 1em;
-}
-
-footer p a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer {
-  clear: both;
-}
 
 #contact {
   text-align: center;
@@ -195,7 +180,7 @@ footer {
 }
 /* Media Query for Desktop Viewport */
 
-@media screen and (min-wdth: 769px), print {
+@media screen and (min-width: 1015px), print {
     /* Desktop Viewport: Style rule for header */
     header {
       width: 25%;
@@ -221,6 +206,12 @@ footer {
           padding: 0.5em 1em;
       }
      }
+
+     nav li a:hover{
+        color: #000;
+        background-color: #fff;
+     }
+
       /* Desktop Viewport: Style Rules for main content */ 
       main{
           clear: left;
@@ -231,7 +222,7 @@ footer {
       }
   
       #weights, #cardio, #training{
-          width: 295;
+          width: 295px;
           float: left;
           margin: 0 2%;
       }
@@ -260,7 +251,22 @@ footer {
       
     }
 
-
+    footer p {
+        font-size: 0.75em;
+        text-align: center;
+        color: #fff;
+        padding: 0 1em;
+      }
+      
+      footer p a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      footer {
+        clear: both;
+      }
+      
 
 #contact .contact-email-link {
   color: #666600;

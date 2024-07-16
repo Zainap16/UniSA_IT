@@ -41,6 +41,12 @@ function addWeekDays() {
 window.addEventListener("load", showGames);
 
 // Function to write game information into the calendar
+/* 
+
+array[x][y]
+x - row
+y - column
+*/
 
 function showGames() {
   for (let i = 0; i < gameDates.length; i++) {

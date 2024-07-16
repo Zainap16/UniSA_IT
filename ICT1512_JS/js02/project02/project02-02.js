@@ -13,14 +13,13 @@
 
 function verifyForm(){
 
-      let fName = document.getElementById("name").value;
-      let fEmail = document.getElementById("email").value;
-      let fPhone = document.getElementById("phone").value;
+    let fname = document.getElementById("name");
+    let email = document.getElementById("email");
+    let phone = document.getElementById("phone");
 
-      let message =(fName !== "" && fEmail !== "" && fPhone !== "") ? "Thank you" : "Please fill in all fields"; // ternary operator
+    let message = (fname == "" && email == "" && phone == "") ? "Thank you" : "Please fill in the required information!!";
 
-      alert(message);
-
+    window.alert(message);
       
 };
 

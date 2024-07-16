@@ -3,8 +3,8 @@
       Project 03-02
 
       Application to generate a slide gallery
-      Author: 
-      Date:   
+      Author: Zainap Van Blerck
+      Date:   2024/07/16
 
       Filename: project03-02.js
 */
@@ -25,4 +25,16 @@ captions[11]="The International Space Station second expansion [2006]";
 captions[12]="The International Space Station third expansion [2007]";
 captions[13]="The ISS over the Ionian Sea [2007]";
 
+let htmlCode = "";
+let gallery = document.getElementById("gallery");
 
+for (let i = 0; i < captions.length; i++) {
+     
+      htmlCode += "<figure>";
+      htmlCode += `<img alt='eh' src='slide${i}.jpg' />`;
+      htmlCode += `<figcaption>${captions[i]}</figcaption>`;
+      htmlCode += "</figure>";
+      
+}
+
+ gallery.innerHTML = htmlCode;

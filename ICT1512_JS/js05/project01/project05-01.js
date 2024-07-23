@@ -4,9 +4,8 @@
       Project 05-01
 
       Project to present an online quiz with a countdown clock
-      Author: 
-      Date:   
-
+      Author: Zainap Van Blerck
+      Date:   2024/07/23
       Filename: project05-01.js
 */
 
@@ -26,7 +25,8 @@ let timeLeft = quizTime;
 
 // Declare the ID for timed commands
 // and the node list for questions
-
+let timeID;
+// let questionList = 
 
 
 

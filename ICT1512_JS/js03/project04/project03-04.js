@@ -26,30 +26,34 @@ let reviewTitles = [
   "Nice Improvement",
 ];
 
-function starrImages(rating) {
+function starImages(rating) {
   var imageText = "";
   for (let j = 1; j <= rating; j++) {
-    imageText += `<img src = 'star.png' alt = 'text'>"`;
-    
+    imageText += `<img src='star.png' alt='star'>`;
   }
   return imageText;
-  for (let i = 0; i < reviewers.length; i++) {
-    reviewCode = "";
+}
 
-    if (reviewType[i] == "P") {
-      reviewCode += "<table class = 'prime'>";
-    } else if (reviewType[i] == "N") {
-      reviewCode += "<table class = 'new'>";
-    } else {
-      reviewCode += "<table>";
-    }
+for (let i = 0; i < reviewers.length; i++) {
+  reviewCode = "";
 
-    reviewCode += `<caption>${reviewTitles[i]}</caption>
-                              <tr><th>By</th><td>${reviewers[i]}</td></tr>
-                              <tr><th>Review Date</th><td>${reviewDates[i]}</td></tr>
-                              <tr><td colspan='2'>${reviews[i]}</td></tr>
-                              </table>`;
-      
-document.getElementsByTagName("article").insertAdjacentHTML("beforeend",reviewCode )
-  };
+  if (reviewType[i] == "P") {
+    reviewCode += "<table class = 'prime'>";
+  } else if (reviewType[i] == "N") {
+    reviewCode += "<table class = 'new'>";
+  } else {
+    reviewCode += "<table>";
+  }
+
+  reviewCode += `
+    <caption>${reviewTitles[i]}</caption>
+    <tr><th>By</th><td>${reviewers[i]}</td></tr>
+    <tr><th>Review Date</th><td>${reviewDates[i]}</td></tr>
+    <tr><th>Rating</th><td>${starImages(stars[i])}</td></tr>
+    <tr><td colspan='2'>${reviews[i]}</td></tr>
+    </table>`;
+
+  document
+    .getElementsByTagName("article")[0]
+    .insertAdjacentHTML("beforeend", reviewCode);
 }

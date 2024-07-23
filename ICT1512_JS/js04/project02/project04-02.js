@@ -3,8 +3,8 @@
       Project 04-02
 
       Application to display a random Jane Austen Quote
-      Author: 
-      Date:   
+      Author: Zainap Van Blerck
+      Date:   2024/07/23
 
       Filename: project04-02.js
 */
@@ -36,19 +36,15 @@ function quoteGenerator() {
    quoteCount = quotes.length;
    
    // Generate a random integer to select a quote
-   randomQuote = randomInt(0, quoteCount);
+   randomQuote = randomInt(0, quoteCount) - 1;
    
    // Retrieve a randomly-selected quote
-   quote = quotes[randomQuotes];
+   quote = quotes[randomQuote];
    
    
    // Display the random quote
-   document.getElementByTagName("blockquote")[1].innerHTML = quote;
+   document.getElementsByTagName("blockquote")[0].innerHTML = quote;
 }
-
-
-
-
 
 
 

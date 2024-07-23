@@ -3,8 +3,8 @@
       Project 04-03
 
       Application to count the number of characters in a review comment
-      Author: 
-      Date:   
+      Author: Zainap Van Blerck
+      Date:   2024/07/23 
 
       Filename: project04-03.js
 */
@@ -19,7 +19,7 @@ warningBox = document.getElementById("warningBox");
 
 
 // Event listener for typing into the comment box
-document.getElementById("comment").addEventListener(keyup, updateCount);
+document.getElementById("comment").addEventListener("keyup", updateCount);
 
 // Function to update the count with each keyup event
 function updateCount() {
@@ -28,9 +28,19 @@ function updateCount() {
    
    // Count the number of characters in the comment box
    commentText = document.getElementById("comment").value;
-   charCount = countCharacters(commentsText);
+   charCount = countCharacters(commentText);
+
+   try {
+      if (charCount > MAX_REVIEW){
+         throw new Error("You have exceeded the character count limit.");
+      }
+   } catch (error) {
+      warningBox.innerHTML = "You have exceeded the character count limit.";
+   }finally {
+      wordCountBox.innerHTML = charCount;
+   }
    
-}
+} 
 
 
 

@@ -26,7 +26,8 @@ let timeLeft = quizTime;
 // Declare the ID for timed commands
 // and the node list for questions
 let timeID;
-// let questionList = 
+let questionList
+
 
 
 

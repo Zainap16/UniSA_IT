@@ -56,15 +56,21 @@ if (totalCorrect === correctAnswers.length){
 
    timeLeft = timeLeft - 1;
    quizClock.value = timeLeft;
-
-   
 }
 
 }
 } 
 
 
+/*
+things i got wrong:
 
+- should use setInterval instead of setTimeout
+- used = instead of ==/===
+- onclick !
+
+
+*/
 
 
 

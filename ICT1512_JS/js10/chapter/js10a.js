@@ -41,5 +41,10 @@ for (let items of storageTables) {
    zIndexCounter++;
 storageCopy.style.zIndex = zIndexCounter; 
 countSeats();
+
+// Grab the table in response to the pointerdown event
+storageCopy.addEventListener("pointerdown", grabTable); 
 }
 }} 
+
+let startingX, startingY; // initial pointer coordinates 
